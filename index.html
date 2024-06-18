@@ -3,10 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Mixer</title>
-    <link href="/css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/grid.css" rel="stylesheet" type="text/css">
+    <title>Billy Beer</title>
 </head>
 <body>
+    <h1 class="hidden">Welcome to Billy Beer Webpage</h1>
+
+    <!-- Main Nav -->
+
+    <div id="sticky-nav-con">
+        <header class="grid-con" id="main-header">
+            <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-11">
+                <h2 class="hidden">Main Navigation</h2>
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul>
+                        <li><a class="active" href="index.html">HOME</a></li>
+                        <li><a href="#">BEERS</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">COMPANY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="logo" class="col-span-full m-col-start-1 m-col-end-4">
+                <img src="images/logo-billybeer.svg" alt="Billy Beer 1977 Logo">
+            </div>
+        </header>
+    </div>
+
+    <!-- Main hero -->
+
+    <section id="hero" class="full-width-grid-con">
+        <h2 class="hidden">Hero Image Section</h2>
+        <img
+            sizes="100vw"
+            src="Images/icon-amberlager.svg"
+            alt="Amber Lager Text"
+            id="amber-main"
+            class="grid-hide"
+        >
+        <img
+            sizes="100vw"
+            srcset="
+            images/img-can-light_rsdnq3_c_scale,w_190.png 190w,
+            images/img-can-light_rsdnq3_c_scale,w_289.png 289w,
+            images/img-can-light_rsdnq3_c_scale,w_369.png 369w,
+            images/img-can-light_rsdnq3_c_scale,w_437.png 437w,
+            images/img-can-light_rsdnq3_c_scale,w_503.png 503w,
+            images/img-can-light_rsdnq3_c_scale,w_559.png 559w,
+            images/img-can-light_rsdnq3_c_scale,w_615.png 615w,
+            images/img-can-light_rsdnq3_c_scale,w_655.png 655w"
+            src="images/img-can-light_rsdnq3_c_scale,w_655.png"
+            alt="Billy Beer Amber Lager Can"
+            id="light-hero-main"
+        >
+        <img
+            sizes="100vw"
+            srcset="
+            images/img-can-dark_imvdo5_c_scale,w_190.png 190w,
+            images/img-can-dark_imvdo5_c_scale,w_289.png 289w,
+            images/img-can-dark_imvdo5_c_scale,w_371.png 371w,
+            images/img-can-dark_imvdo5_c_scale,w_435.png 435w,
+            images/img-can-dark_imvdo5_c_scale,w_501.png 501w,
+            images/img-can-dark_imvdo5_c_scale,w_557.png 557w,
+            images/img-can-dark_imvdo5_c_scale,w_607.png 607w,
+            images/img-can-dark_imvdo5_c_scale,w_655.png 655w"
+            src="images/img-can-dark_imvdo5_c_scale,w_655.png"
+            alt="Billy Beer Amber Lager Can"
+            id="dark-hero-main"
+        >
+        <img
+            sizes="100vw"
+            srcset="
+            images/img-can-amber_pv9fzm_c_scale,w_200.png 200w,
+            images/img-can-amber_pv9fzm_c_scale,w_308.png 308w,
+            images/img-can-amber_pv9fzm_c_scale,w_393.png 393w,
+            images/img-can-amber_pv9fzm_c_scale,w_471.png 471w,
+            images/img-can-amber_pv9fzm_c_scale,w_532.png 532w,
+            images/img-can-amber_pv9fzm_c_scale,w_595.png 595w,
+            images/img-can-amber_pv9fzm_c_scale,w_655.png 655w"
+            src="images/img-can-amber_pv9fzm_c_scale,w_655.png"
+            alt="Billy Beer Amber Lager Can"
+            id="amber-hero-main"
+        >
+        <div>
+            <p>I had this beer brewed up just for me.<br>
+                I think it’s the best I ever tasted.<br>
+                And I’ve tasted a lot.<br>
+                I think you’ll like it, too.
+            </p>
+            <img
+                sizes="100vw"
+                src="Images/icon-billysignature.svg"
+                alt="Amber Lager Text"
+                id="billysignature-main"
+            >
+        </div>
+    </section>
+
+    <div class="grid-con">
+        <section id="intro-summary" class="col-span-full">
+            <h3>Billy Beer: <span>The Original Brew</span></h3>
+            <p>Billy Beer, the iconic brand from 1977, is making a comeback! This American classic, endorsed by Billy Carter, brother of President Jimmy Carter, is your chance to taste a piece of history.</p>
+            <p>Brewed with care and Billy's signature approval, Billy Beer is a refreshing and satisfying lager. Don't miss this chance to be a part of Billy Beer's legacy! Try it today and experience the taste of history!</p>
+        </section>
+    </div>
+
+    <!-- Beers -->
+
+    <div id="beers-main">
+        <h2>Our Beers</h2>
+        <div class="grid-con">
+            <section class="col-span-full">
+                <h2>AMBER LAGER</h2>
+                <img
+                    sizes="100vw"
+                    srcset="
+                    images/img-can-amber_pv9fzm_c_scale,w_200.png 200w,
+                    images/img-can-amber_pv9fzm_c_scale,w_308.png 308w,
+                    images/img-can-amber_pv9fzm_c_scale,w_393.png 393w,
+                    images/img-can-amber_pv9fzm_c_scale,w_471.png 471w,
+                    images/img-can-amber_pv9fzm_c_scale,w_532.png 532w,
+                    images/img-can-amber_pv9fzm_c_scale,w_595.png 595w,
+                    images/img-can-amber_pv9fzm_c_scale,w_655.png 655w"
+                    src="images/img-can-amber_pv9fzm_c_scale,w_655.png"
+                    alt="Billy Beer Amber Lager Can"
+                    class="beers-main"
+                >
+            </section>
+            <div class="col-span-full">
+                <p>Brewed with a touch of caramel malt, Billy Beer Amber Lager boasts a rich amber hue and a smooth, malty flavor with hints of toasted bread and toffee. This medium-bodied lager is perfect for those who appreciate a balanced and flavorful beer.</p>
+            </div>
+            <section class="col-span-full">
+                <h2>LIGHT LAGER</h2>
+                <img
+                    sizes="100vw"
+                    srcset="
+                    images/img-can-light_rsdnq3_c_scale,w_190.png 190w,
+                    images/img-can-light_rsdnq3_c_scale,w_289.png 289w,
+                    images/img-can-light_rsdnq3_c_scale,w_369.png 369w,
+                    images/img-can-light_rsdnq3_c_scale,w_437.png 437w,
+                    images/img-can-light_rsdnq3_c_scale,w_503.png 503w,
+                    images/img-can-light_rsdnq3_c_scale,w_559.png 559w,
+                    images/img-can-light_rsdnq3_c_scale,w_615.png 615w,
+                    images/img-can-light_rsdnq3_c_scale,w_655.png 655w"
+                    src="images/img-can-light_rsdnq3_c_scale,w_655.png"
+                    alt="Billy Beer Amber Lager Can"
+                    class="beers-main"
+                >
+            </section>
+            <div class="col-span-full">
+                <p> Billy Beer Light Lager is a golden delight, brewed for pure refreshment. Its light body and clean finish make it the ideal companion for a hot day or a casual gathering. Enjoy the subtle sweetness and crispness of this easy-drinking lager.</p>
+            </div>
+            <section class="col-span-full">
+                <h2>DARK LAGER</h2>
+                <img
+                    sizes="100vw"
+                    srcset="
+                    images/img-can-dark_imvdo5_c_scale,w_190.png 190w,
+                    images/img-can-dark_imvdo5_c_scale,w_289.png 289w,
+                    images/img-can-dark_imvdo5_c_scale,w_371.png 371w,
+                    images/img-can-dark_imvdo5_c_scale,w_435.png 435w,
+                    images/img-can-dark_imvdo5_c_scale,w_501.png 501w,
+                    images/img-can-dark_imvdo5_c_scale,w_557.png 557w,
+                    images/img-can-dark_imvdo5_c_scale,w_607.png 607w,
+                    images/img-can-dark_imvdo5_c_scale,w_655.png 655w"
+                    src="images/img-can-dark_imvdo5_c_scale,w_655.png"
+                    alt="Billy Beer Amber Lager Can"
+                    class="beers-main"
+                >
+            </section>
+            <div class="col-span-full">
+                <p>Billy Beer Dark Lager offers a unique twist on the classic recipe. Deep amber in color, it boasts a rich, roasted flavor profile with hints of chocolate and coffee. This full-bodied lager is perfect for those who appreciate a bolder beer experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feactures -->
+
+    <div id="feactures-main">
+        <h2>feactures</h2>
+        <div class="grid-con">
+            <section class="col-span-2">
+                <div>
+                    <object data="images/icon-1977.svg" type="image/svg+xml"></object>
+                </div>
+            </section>
+            <div class="col-span-2">
+                <h3>Born</h3>
+                <p>Billy Beer returns with its original recipe! Experience a taste of history in every sip.</p>
+            </div>
+            <section class="col-span-2">
+                <div>
+                    <object data="images/icon-bcap.svg" type="image/svg+xml"></object>
+                </div>
+            </section>
+            <div class="col-span-2">
+                <h3>American Pride</h3>
+                <p>We use the finest domestic ingredients to craft a refreshing lager you can be proud to enjoy.</p>
+            </div>
+            <section class="col-span-2">
+                <div>
+                    <object data="images/icon-beer.svg" type="image/svg+xml"></object>
+                </div>
+            </section>
+            <div class="col-span-2">
+                <h3>open a cold one</h3>
+                <p>Billy Beer's smooth taste and crisp finish make it the perfect companion for any occasion.</p>
+            </div>
+            <section class="col-span-2">
+                <div>
+                    <object data="images/icon-cheers.svg" type="image/svg+xml"></object>
+                </div>
+            </section>
+            <div class="col-span-2">
+                <h3>to good times!</h3>
+                <p>Share the joy of Billy Beer with friends and family. It's the perfect beer for backyard barbecues, game nights, or just catching up.</p>
+            </div>
+            <section class="col-span-2">
+                <div>
+                    <object data="images/icon-lupulus.svg" type="image/svg+xml"></object>
+                </div>
+            </section>
+            <div class="col-span-2">
+                <h3>real flavor</h3>
+                <p>Billy Beer uses only the choicest hops to deliver a refreshingly authentic taste.</p>
+            </div>
+            <section class="col-span-2">
+                <div>
+                    <object data="images/icon-water.svg" type="image/svg+xml"></object>
+                </div>
+            </section>
+            <div class="col-span-2">
+                <h3>beat the heat</h3>
+                <p>This ice-cold lager is the perfect way to quench your thirst on a hot day.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <section id="contact-main" class="grid-con">
+        <h2 class="col-span-full">Contact US</h2>
+        <div id="contact-hero-text" class="col-span-full m-col-start-2 m-col-end-12">
+            <p>We're here to answer any questions you might have about Billy Beer! Whether you're a curious customer, a brewing enthusiast, or a potential partner, we'd love to hear from you.</p>
+        </div>
+        <div id="contact-hero-form" class="col-span-full m-col-start-6 m-col-end-12">
+            <form action="#" method="post" enctype="text/plain">
+                <input name="fullName" type="text" required placeholder="First & Last Name">
+                <input name="contactInfo" type="email" required placeholder="Email">
+                <textarea name="msg" placeholder="Message here..."></textarea>
+                <input name="submit" type="submit" value="Cheers!">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+    <footer id="footer-hero">
+        <div class="grid-con">
+            <nav id="footer-nav" class="col-span-3 m-col-start-6 m-col-end-9 l-col-start-5 l-col-end-8">
+                <h2 class="hidden">Footer Nav</h2>
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="#">BEERS</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">COMPANY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div id="footer-logo" class="col-span-1">
+                <img src="images/logo-billybeer.svg" alt="Billy Beer 1977 Logo">
+            </div>
+            <div id="footer-privacy" class="line-separator col-span-full m-col-start-2 m-col-end-12">
+                <p id="privacy-policy">©2024 Billy Beer. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/main.js"></script>
 </body>
