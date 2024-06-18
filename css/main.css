@@ -1,0 +1,343 @@
+/* Billy Beer Responsive Build */
+
+/* 
+    CSS Guide
+    1. General styles
+    2. Main Nav
+    3. Main Hero
+    5. Feactures
+    6. Contact Us
+    7. Footer
+*/
+
+/* * {
+    border: 1px solid #585857;
+} */
+ 
+/* 1. General styles */
+
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    background-color: #fcfaf8;
+    color: #585857;
+}
+
+a {
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #dc573d;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 900;
+    color: #4778d4;
+    text-transform: uppercase;
+    line-height: 26px;
+}
+
+h3 span {
+    font-weight: 500;
+}
+
+p {
+    line-height: 26px;
+    font-weight: 400;
+}
+
+/* 2. Main Nav */
+
+
+#main-nav button {
+    width: 32px;
+    height: 32px;
+    background: url(../images/icon-burger.svg) no-repeat center;
+    margin-top: 16px;
+    transition: all .3s ease;
+    margin-bottom: 20px;
+    border: 0;
+}
+
+#main-nav button.expanded {
+    transform: rotate(90deg);
+}
+
+#burger-con {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#burger-con.slide-toggle {
+    display: block;
+}
+
+#main-nav ul li a {
+    font-size: 55px;
+    font-weight: 900;
+    background-color: #406cbf;
+    display: block;
+    padding: 0 20px;
+    text-align: left;
+    color: #edf2fb;
+}
+
+#main-nav ul li a:hover {
+    background-color: #355a9f;
+    color: #edf2fb;
+}
+
+#main-nav ul {
+    background-color: #406cbf;
+    list-style: none;
+    padding: 50px 0;
+    margin: 0;
+}
+
+
+#logo {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-inline: max(25px,50% - 290px/2);
+}
+
+#main-nav ul li .active {
+    background-color: #355a9f;
+    color: #c6d5f2;
+}
+
+
+/* 3. Main Hero */
+
+
+#hero {
+    margin: 40px;
+}
+
+#hero img {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+}
+
+#hero div {
+    grid-column: 1/-1;
+    margin-top: 25px;
+}
+
+#light-hero-main {
+    margin-inline: max(15px,30% - 240px/2);
+    max-width: 240px;
+    margin-top: 10px;
+    rotate: -10deg;
+}
+
+#dark-hero-main {
+    margin-inline: max(15px,70% - 240px/2);
+    max-width: 240px;
+    margin-top: 10px;
+    rotate: 10deg;
+}
+
+#amber-hero-main {
+    z-index: 1;
+    margin-inline: max(15px,50% - 240px/2);
+    max-width: 240px;
+}
+
+#amber-main {
+    width: 370px;
+    justify-self: center;
+}
+
+#hero div p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+}
+
+#billysignature-main {
+    margin-inline: max(45px,50% - 160px/2);
+    margin-top: 6px;
+}
+
+#intro-summary h3 {
+    margin-top: 50px;
+    margin-bottom: 22px;
+}
+
+#intro-summary p {
+    margin-bottom: 16px;
+}
+
+
+/* 4. Beers */
+
+#beers-main {
+    margin: 80px 15px;
+}
+
+#beers-main div h2 {
+    margin-top: 55px;
+    font-size: 40px;
+    color: #585857;
+    text-align: center;
+}
+
+.beers-main {
+    margin-inline: max(15px,50% - 240px/2);
+    max-width: 240px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#beers-main div p {
+    margin-inline: 50px;
+    text-align: center;
+}
+
+
+/* 5. Feactures */
+
+
+#feactures-main {
+    margin: 100px 0;
+}
+
+#feactures-main h2 {
+    margin: 0 15px 80px;
+}
+
+#feactures-main div {
+    align-self: center;
+} 
+
+#feactures-main section {
+    border-right: solid 2px;
+    padding-right: 15px;
+}
+
+
+/* 6. Contact Us */
+
+
+#contact-main {
+    margin: 120px 0 80px;
+}
+
+#contact-main h2 {
+    margin: 0 15px 65px;
+}
+
+#contact-hero-form form {
+   display: flex;
+   flex-direction: column;
+   margin-top: 40px;
+}
+
+#contact-hero-form input, textarea {
+   padding: 22px;
+   border: 2px solid #bdbcba;
+   background-color: #fefdfd;
+   border-radius: 5px;
+   margin-bottom: 30px;
+   font: inherit;
+   width: 100%;
+}
+
+#contact-hero-form textarea {
+   height: 250px;
+}
+
+#contact-hero-form input[type="submit"] {
+   padding: 16px 28px;
+   background: #dc573d;
+   font-size: 18px;
+   color: #fcfaf8;
+   border: none;
+   transition: all 200ms ease-in;
+   width: 220px;
+   align-self: flex-end;
+   font-style: italic;
+}
+
+#contact-hero-form input[type="submit"]:hover {
+   background-color: #c64e37;
+   color: #fae6e2;
+   transform: scale(1.05);
+   margin-right: 6px;
+}
+
+
+/* 7. Footer */
+
+
+#footer-hero {
+    background-color: #192a4a;
+    color: #edf2fb;
+    font-size: 12px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+#footer-nav {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#footer-nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+#footer-nav ul li a {
+    font-size: 60px;
+    color: #edf2fb;
+    line-height: 30px;
+    font-weight: 900;
+    text-align: right;
+}
+
+#footer-nav ul li a:hover {
+    color: #4778d4;
+}
+
+#footer-nav ul li {
+    margin-bottom: 20px;
+}
+
+#footer-logo {
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-left: -80px;
+    max-width: 160px;
+}
+
+#footer-hero .line-separator {
+    border-top: solid 1px #edf2fb;
+}
+
+#footer-privacy p {
+    margin-top: 40px;
+    line-height: 18px;
+    font-size: 16px;
+    text-align: center;
+}
