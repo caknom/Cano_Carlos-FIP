@@ -17,7 +17,7 @@
 
     <div id="sticky-nav-con">
         <header class="grid-con" id="main-header">
-            <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-11">
+            <nav id="main-nav" class="col-span-full m-col-start-5 m-col-end-13 l-col-start-4 l-col-end-13">
                 <h2 class="hidden">Main Navigation</h2>
                 <button id="button"></button>
                 <div id="burger-con">
@@ -30,7 +30,7 @@
                     </ul>
                 </div>
             </nav>
-            <div id="logo" class="col-span-full m-col-start-1 m-col-end-4">
+            <div id="logo" class="col-span-full m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-4">
                 <img src="images/logo-billybeer.svg" alt="Billy Beer 1977 Logo">
             </div>
         </header>
@@ -45,6 +45,20 @@
             src="Images/icon-amberlager.svg"
             alt="Amber Lager Text"
             id="amber-main"
+            class="grid-hide"
+        >
+        <img
+            sizes="100vw"
+            src="Images/icon-lightlager.svg"
+            alt="Amber Lager Text"
+            id="light-main"
+            class="grid-hide"
+        >
+        <img
+            sizes="100vw"
+            src="Images/icon-darklager.svg"
+            alt="Amber Lager Text"
+            id="dark-main"
             class="grid-hide"
         >
         <img
@@ -99,7 +113,7 @@
             </p>
             <img
                 sizes="100vw"
-                src="Images/icon-billysignature.svg"
+                src="images/icon-billysignature.svg"
                 alt="Amber Lager Text"
                 id="billysignature-main"
             >
@@ -117,9 +131,9 @@
     <!-- Beers -->
 
     <div id="beers-main">
-        <h2>Our Beers</h2>
         <div class="grid-con">
-            <section class="col-span-full">
+            <h2 id="beer-tittle" class="col-span-full">Our Beers</h2>
+            <section class="col-span-full m-col-span-full l-col-start-2 l-col-end-6">
                 <h2>AMBER LAGER</h2>
                 <img
                     sizes="100vw"
@@ -136,10 +150,10 @@
                     class="beers-main"
                 >
             </section>
-            <div class="col-span-full">
+            <div class="col-span-full m-col-span-full l-col-start-6 l-col-end-12">
                 <p>Brewed with a touch of caramel malt, Billy Beer Amber Lager boasts a rich amber hue and a smooth, malty flavor with hints of toasted bread and toffee. This medium-bodied lager is perfect for those who appreciate a balanced and flavorful beer.</p>
             </div>
-            <section class="col-span-full">
+            <section class="col-span-full m-col-span-full l-col-start-2 l-col-end-6">
                 <h2>LIGHT LAGER</h2>
                 <img
                     sizes="100vw"
@@ -157,10 +171,10 @@
                     class="beers-main"
                 >
             </section>
-            <div class="col-span-full">
+            <div class="col-span-full m-col-span-full l-col-start-6 l-col-end-12">
                 <p> Billy Beer Light Lager is a golden delight, brewed for pure refreshment. Its light body and clean finish make it the ideal companion for a hot day or a casual gathering. Enjoy the subtle sweetness and crispness of this easy-drinking lager.</p>
             </div>
-            <section class="col-span-full">
+            <section class="col-span-full m-col-span-full l-col-start-2 l-col-end-6">
                 <h2>DARK LAGER</h2>
                 <img
                     sizes="100vw"
@@ -178,7 +192,7 @@
                     class="beers-main"
                 >
             </section>
-            <div class="col-span-full">
+            <div class="col-span-full m-col-span-full l-col-start-6 l-col-end-12">
                 <p>Billy Beer Dark Lager offers a unique twist on the classic recipe. Deep amber in color, it boasts a rich, roasted flavor profile with hints of chocolate and coffee. This full-bodied lager is perfect for those who appreciate a bolder beer experience.</p>
             </div>
         </div>
@@ -187,59 +201,59 @@
     <!-- Feactures -->
 
     <div id="feactures-main">
-        <h2>feactures</h2>
         <div class="grid-con">
-            <section class="col-span-2">
+            <h2 id="feactures-tittle" class="col-span-full">feactures</h2>
+            <section class="col-span-2 m-col-start-1 m-col-end-6 l-col-start-4 l-col-end-9">
                 <div>
                     <object data="images/icon-1977.svg" type="image/svg+xml"></object>
                 </div>
             </section>
-            <div class="col-span-2">
+            <div class="col-span-2 m-col-start-6 m-col-end-13 l-col-start-9 l-col-end-13">
                 <h3>Born</h3>
                 <p>Billy Beer returns with its original recipe! Experience a taste of history in every sip.</p>
             </div>
-            <section class="col-span-2">
+            <section class="col-span-2 m-col-start-1 m-col-end-6 l-col-start-4 l-col-end-9">
                 <div>
                     <object data="images/icon-bcap.svg" type="image/svg+xml"></object>
                 </div>
             </section>
-            <div class="col-span-2">
+            <div class="col-span-2 m-col-start-6 m-col-end-13 l-col-start-9 l-col-end-13">
                 <h3>American Pride</h3>
                 <p>We use the finest domestic ingredients to craft a refreshing lager you can be proud to enjoy.</p>
             </div>
-            <section class="col-span-2">
+            <section class="col-span-2 m-col-start-1 m-col-end-6 l-col-start-4 l-col-end-9">
                 <div>
                     <object data="images/icon-beer.svg" type="image/svg+xml"></object>
                 </div>
             </section>
-            <div class="col-span-2">
+            <div class="col-span-2 m-col-start-6 m-col-end-13 l-col-start-9 l-col-end-13">
                 <h3>open a cold one</h3>
                 <p>Billy Beer's smooth taste and crisp finish make it the perfect companion for any occasion.</p>
             </div>
-            <section class="col-span-2">
+            <section class="col-span-2 m-col-start-1 m-col-end-6 l-col-start-4 l-col-end-9">
                 <div>
                     <object data="images/icon-cheers.svg" type="image/svg+xml"></object>
                 </div>
             </section>
-            <div class="col-span-2">
+            <div class="col-span-2 m-col-start-6 m-col-end-13 l-col-start-9 l-col-end-13">
                 <h3>to good times!</h3>
                 <p>Share the joy of Billy Beer with friends and family. It's the perfect beer for backyard barbecues, game nights, or just catching up.</p>
             </div>
-            <section class="col-span-2">
+            <section class="col-span-2 m-col-start-1 m-col-end-6 l-col-start-4 l-col-end-9">
                 <div>
                     <object data="images/icon-lupulus.svg" type="image/svg+xml"></object>
                 </div>
             </section>
-            <div class="col-span-2">
+            <div class="col-span-2 m-col-start-6 m-col-end-13 l-col-start-9 l-col-end-13">
                 <h3>real flavor</h3>
                 <p>Billy Beer uses only the choicest hops to deliver a refreshingly authentic taste.</p>
             </div>
-            <section class="col-span-2">
+            <section class="col-span-2 m-col-start-1 m-col-end-6 l-col-start-4 l-col-end-9">
                 <div>
                     <object data="images/icon-water.svg" type="image/svg+xml"></object>
                 </div>
             </section>
-            <div class="col-span-2">
+            <div class="col-span-2 m-col-start-6 m-col-end-13 l-col-start-9 l-col-end-13">
                 <h3>beat the heat</h3>
                 <p>This ice-cold lager is the perfect way to quench your thirst on a hot day.</p>
             </div>
@@ -250,10 +264,10 @@
 
     <section id="contact-main" class="grid-con">
         <h2 class="col-span-full">Contact US</h2>
-        <div id="contact-hero-text" class="col-span-full m-col-start-2 m-col-end-12">
-            <p>We're here to answer any questions you might have about Billy Beer! Whether you're a curious customer, a brewing enthusiast, or a potential partner, we'd love to hear from you.</p>
+        <div id="contact-hero-text" class="col-span-full m-col-start-1 m-col-end-6">
+            <p>We are here to answer any questions you might have about Billy Beer!<br> Whether you are a curious customer, a brewing enthusiast, or a potential partner, we would love to hear from you.</p>
         </div>
-        <div id="contact-hero-form" class="col-span-full m-col-start-6 m-col-end-12">
+        <div id="contact-hero-form" class="col-span-full m-col-start-6 m-col-end-13">
             <form action="#" method="post" enctype="text/plain">
                 <input name="fullName" type="text" required placeholder="First & Last Name">
                 <input name="contactInfo" type="email" required placeholder="Email">
@@ -267,7 +281,7 @@
     
     <footer id="footer-hero">
         <div class="grid-con">
-            <nav id="footer-nav" class="col-span-3 m-col-start-6 m-col-end-9 l-col-start-5 l-col-end-8">
+            <nav id="footer-nav" class="col-span-3 m-col-start-1 m-col-end-9">
                 <h2 class="hidden">Footer Nav</h2>
                 <ul>
                     <li><a class="active" href="index.html">HOME</a></li>
@@ -277,7 +291,7 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
-            <div id="footer-logo" class="col-span-1">
+            <div id="footer-logo" class="col-span-1 m-col-start-10 m-col-end-13">
                 <img src="images/logo-billybeer.svg" alt="Billy Beer 1977 Logo">
             </div>
             <div id="footer-privacy" class="line-separator col-span-full m-col-start-2 m-col-end-12">
