@@ -21,7 +21,6 @@
 
 body {
     font-family: "Merriweather Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 350;
     font-style: normal;
     background-color: #fcfaf8;
@@ -146,14 +145,14 @@ p {
     margin-inline: max(15px,30% - 240px/2);
     max-width: 240px;
     margin-top: 10px;
-    rotate: -10deg;
+    transform: rotate(-10deg);
 }
 
 #dark-hero-main {
     margin-inline: max(15px,70% - 240px/2);
     max-width: 240px;
     margin-top: 10px;
-    rotate: 10deg;
+    transform: rotate(10deg);
 }
 
 #amber-hero-main {
@@ -201,6 +200,11 @@ p {
 
 #beers-main {
     margin: 80px 15px;
+    animation: 1s ease;
+}
+
+.beers-main:hover {
+    transform: rotate(5deg) scale(1.03);
 }
 
 #beers-main div h2 {
@@ -392,8 +396,6 @@ p {
         display: flex;
         flex-direction: column;
         background-color: #fcfaf8;
-        list-style: none;
-        padding: auto 0;
         margin: 0 50px;
     }
  
@@ -687,9 +689,10 @@ p {
     
     #beers-main section h2 {
         position: absolute;
-        margin: 260px -200px;
+        margin: 260px -240px;
+        width: 500px;
         font-size: 60px;
-        rotate: -90deg;
+        transform: rotate(-90deg);
     }
     
     .beers-main {
