@@ -115,6 +115,10 @@ body, p, h1, h2, h3, h4, h5 {
   .m-col-end-13	{grid-column-end: 13;}
   .m-col-end-auto	{grid-column-end: auto;}
 
+  .grid-hide {
+    display: inherit;
+  }
+
 }
 
 /* ---Desktop Library Grid Styles--- */
