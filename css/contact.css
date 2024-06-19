@@ -1,0 +1,477 @@
+/* Billy Beer Responsive Build */
+
+/* 
+    CSS Guide
+    1. General styles
+    2. Main Nav
+    3. Contact Us
+    4. Footer
+*/
+
+/* * {
+    border: 1px solid #585857;
+} */
+
+ 
+/* 1. General styles */
+
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    background-color: #fcfaf8;
+    color: #585857;
+}
+
+a {
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #dc573d;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 900;
+    color: #4778d4;
+    text-transform: uppercase;
+    line-height: 26px;
+}
+
+h3 span {
+    font-weight: 500;
+}
+
+p {
+    line-height: 26px;
+    font-weight: 400;
+}
+
+li {
+    line-height: 26px;
+    font-weight: 400;
+}
+
+/* 2. Main Nav */
+
+
+#main-nav button {
+    width: 32px;
+    height: 32px;
+    background: url(../images/icon-burger.svg) no-repeat center;
+    margin-top: 16px;
+    transition: all .3s ease;
+    margin-bottom: 20px;
+    border: 0;
+}
+
+#main-nav button.expanded {
+    transform: rotate(90deg);
+}
+
+#burger-con {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#burger-con.slide-toggle {
+    display: block;
+}
+
+#main-nav ul li a {
+    font-size: 55px;
+    font-weight: 900;
+    background-color: #406cbf;
+    display: block;
+    padding: 21px 20px;
+    text-align: left;
+    color: #edf2fb;
+}
+
+#main-nav ul li a:hover {
+    background-color: #355a9f;
+    color: #edf2fb;
+}
+
+#main-nav ul {
+    background-color: #406cbf;
+    list-style: none;
+    padding: 50px 0;
+    margin: 0;
+}
+
+#logo {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-inline: max(25px,50% - 290px/2);
+}
+
+
+/* 3. Contact Us */
+
+
+#contact-main {
+    margin: 80px 0 60px;
+}
+
+#contact-main h2 {
+    margin: 0 0px 10px;
+}
+
+#contact-main p {
+    margin: 20px 0 40px;
+}
+
+#contact-main h3 {
+    margin: 10px 0 30px;
+}
+
+#contact-main ul {
+    margin-right: 50px;
+}
+
+#contact-hero-form form {
+   display: flex;
+   flex-direction: column;
+   margin-top: 40px;
+}
+
+#contact-hero-form input, textarea {
+   padding: 22px;
+   border: 2px solid #bdbcba;
+   background-color: #fefdfd;
+   border-radius: 5px;
+   margin-bottom: 30px;
+   font: inherit;
+   width: 100%;
+}
+
+#contact-hero-form textarea {
+   height: 250px;
+}
+
+#contact-hero-form input[type="submit"] {
+   padding: 16px 28px;
+   background: #dc573d;
+   font-size: 18px;
+   color: #fcfaf8;
+   border: none;
+   transition: all 200ms ease-in;
+   width: 220px;
+   align-self: flex-end;
+   font-style: italic;
+}
+
+#contact-hero-form input[type="submit"]:hover {
+   background-color: #c64e37;
+   color: #fae6e2;
+   transform: scale(1.05);
+   margin-right: 6px;
+}
+
+#contact-msg {
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* 4. Footer */
+
+
+#footer-hero {
+    background-color: #192a4a;
+    color: #edf2fb;
+    font-size: 12px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+#footer-nav {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#footer-nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+#footer-nav ul li a {
+    font-size: 60px;
+    color: #edf2fb;
+    line-height: 30px;
+    font-weight: 900;
+    text-align: right;
+}
+
+#footer-nav ul li a:hover {
+    color: #4778d4;
+}
+
+#footer-nav ul li {
+    margin-bottom: 20px;
+}
+
+#footer-logo {
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-left: -80px;
+    max-width: 160px;
+}
+
+#footer-hero .line-separator {
+    border-top: solid 1px #edf2fb;
+}
+
+#footer-privacy p {
+    margin-top: 40px;
+    line-height: 18px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+/* ---Tablet Library Grid Styles--- */
+
+
+
+@media screen and (min-width: 768px) {
+
+    /* 
+        CSS Guide
+        1. Main Nav
+        2. Contact Us
+        3. Footer
+    */
+
+
+    /* 1. Main Nav */
+
+
+    #sticky-nav-con {
+        border-bottom: solid 1px #585857;
+        max-height: 300px;
+    }
+ 
+    #main-nav {
+        grid-row: 1/1;
+        border-left: 1px solid #585857;
+        height: 300px;
+    }
+
+    #main-nav ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #fcfaf8;
+        margin: 0 50px;
+    }
+ 
+    #main-nav ul li a {
+        background-color: #fcfaf8;
+        color: #4778d4;
+        font-size: 45px;
+        width: 260px;
+        line-height: 40px;
+        font-weight: 900;
+    }
+
+    #main-nav ul li a:hover {
+        background-color: #fcfaf8;
+        color: #2b487f;
+    }
+ 
+    #button {
+        display: none;
+    }
+ 
+    #burger-con {
+        display: block;
+        font-size: 12px;
+    }
+ 
+    #logo {
+        margin-top: 32px;
+        min-width: 200px;
+        margin-inline: auto;
+        align-self: center;
+    }
+ 
+    
+    /* 2. Contact Us */
+
+
+    #contact-main {
+        margin-inline: 30px;
+    }
+
+    #contact-main h2 {
+        margin-bottom: 60px;
+
+    }
+
+    #contact-hero-text {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #contact-hero-text p {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    #contact-hero-text ul {
+        margin-right: 0px;
+    }
+
+    #contact-hero-form form {
+       margin-top: 0px;
+    }
+
+    #contact-hero-form textarea {
+        height: 390px;
+    }
+
+ 
+    /* 3. Footer */
+
+
+    #footer-nav {
+        margin-inline: 30px;
+    }
+
+    #footer-logo {
+        margin-top: 60px;
+        margin-right: 60px;
+        min-width: 260px;
+        justify-self: right;
+    }
+
+    #footer-hero .line-separator {
+        grid-column: 1/-1;
+        margin: 0 30px;
+    }
+
+    #footer-privacy p {
+        margin-top: 40px;
+        line-height: 18px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+}
+
+
+
+/* ---Desktop Library Grid Styles--- */
+
+
+
+@media screen and (min-width: 1200px) {
+
+    /* 
+        CSS Guide
+        1. Main Nav
+        2. Contact Us
+    */
+
+
+    p {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+    }
+
+    li {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+    
+    h3 {
+        font-size: 36px;
+    }
+    
+
+    /* 1. Main Nav */
+
+
+    #sticky-nav-con {
+        min-height: 320px;
+    }
+
+    #main-nav {
+        height: 320px;
+    }
+ 
+    #main-nav ul li a {
+        font-size: 51px;
+        line-height: 43px;
+        font-weight: 900;
+    }
+ 
+    #logo {
+        width: 240px;
+        margin: 0 auto;
+    }
+
+
+    /* 2. Contact Us */
+
+
+    #contact-main h2 {
+        margin-bottom: 60px;
+        line-height: 70px;
+    }
+
+    #contact-hero-text {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #contact-main h3 {
+        line-height: 36px;
+    }
+
+    #contact-hero-text p {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    #contact-hero-text ul {
+        margin-right: 0px;
+    }
+
+    #contact-hero-form form {
+       margin-top: 0px;
+    }
+
+    #contact-hero-form textarea {
+        height: 320px;
+    }
+
+    #contact-main {
+        margin: 80px auto 120px;
+        padding-inline: 30px;
+    }
+
+}

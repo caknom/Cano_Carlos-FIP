@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="./css/contact.css" rel="stylesheet" type="text/css">
+    <link href="./css/grid.css" rel="stylesheet" type="text/css">
+    <title>Billy Beer</title>
+</head>
+<body>
+    <h1 class="hidden">Welcome to Billy Beer Webpage</h1>
+
+    <!-- Main Nav -->
+
+    <div id="sticky-nav-con">
+        <header class="grid-con" id="main-header">
+            <nav id="main-nav" class="col-span-full m-col-start-5 m-col-end-13 l-col-start-4 l-col-end-13">
+                <h2 class="hidden">Main Navigation</h2>
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#">BEERS</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">COMPANY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="logo" class="col-span-full m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-4">
+                <img src="images/logo-billybeer.svg" alt="Billy Beer 1977 Logo">
+            </div>
+        </header>
+    </div>
+
+
+    <!-- Contact -->
+
+    <section id="contact-main" class="grid-con">
+        <h2 class="col-span-full">Have a Question About Billy Beer? We have Got Answers!</h2>
+        <div id="contact-hero-text" class="col-span-full m-col-start-1 m-col-end-6">
+            <p>At Billy Beer, we are passionate about sharing our refreshing lagers and the rich history behind the brand. Whether you are a curious customer discovering Billy Beer for the first time, a seasoned brewing enthusiast with a technical question, or a potential partner interested in collaborating, we would love to hear from you!</p>
+            <h3>Here's how you can connect with the Billy Beer team:</h3>
+            <ul>
+                <li>Ask Us Anything: Our friendly customer service representatives are here to answer your questions about Billy Beer's availability, taste profiles, brewing process, or even the fascinating history of the brand. Feel free to send us an email and we will get back to you as soon as possible.</li>
+                <li>Join the Conversation: Follow us on social media for the latest news, promotions, and exclusive behind-the-scenes content! We love interacting with our fans and sharing our passion for Billy Beer.</li>
+            </ul>
+        </div>
+        <div id="contact-hero-form" class="col-span-full m-col-start-6 m-col-end-13">
+            <form action="#" method="post" enctype="text/plain">
+                <input name="fullName" type="text" required placeholder="First & Last Name">
+                <input name="address" type="text" placeholder="Address (optional)">
+                <input name="phoneNumber" type="number" placeholder="Phone Number (optional)">
+                <input name="contactInfo" type="email" required placeholder="Email">
+                <textarea name="msg" placeholder="Message here..."></textarea>
+                <input name="submit" type="submit" value="Cheers!">
+            </form>
+        </div>
+        <div class="col-span-full">
+            <p>We appreciate your interest in Billy Beer! We are confident that once you try our delicious lagers and experience our dedication to quality and customer service, you will become a lifelong fan.</p>
+            <h3 id="contact-msg">Don't hesitate to reach out<br>we're here to help!</h3>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+    <footer id="footer-hero">
+        <div class="grid-con">
+            <nav id="footer-nav" class="col-span-3 m-col-start-1 m-col-end-9">
+                <h2 class="hidden">Footer Nav</h2>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">BEERS</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">COMPANY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div id="footer-logo" class="col-span-1 m-col-start-10 m-col-end-13">
+                <img src="images/logo-billybeer.svg" alt="Billy Beer 1977 Logo">
+            </div>
+            <div id="footer-privacy" class="line-separator col-span-full m-col-start-2 m-col-end-12">
+                <p id="privacy-policy">©2024 Billy Beer. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

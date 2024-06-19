@@ -118,11 +118,6 @@ p {
     margin-inline: max(25px,50% - 290px/2);
 }
 
-#main-nav ul li .active {
-    background-color: #355a9f;
-    color: #c6d5f2;
-}
-
 
 /* 3. Main Hero */
 
@@ -411,11 +406,6 @@ p {
     #main-nav ul li a:hover {
         background-color: #fcfaf8;
         color: #2b487f;
-    }
-    
-    #main-nav ul li .active {
-        background-color: #fcfaf8;
-        color: #4778d4;
     }
  
     #button {
