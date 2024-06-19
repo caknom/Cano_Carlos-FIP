@@ -289,7 +289,10 @@ li {
         width: 260px;
         line-height: 40px;
         font-weight: 900;
+        padding: 0 20px;
     }
+
+    
 
     #main-nav ul li a:hover {
         background-color: #fcfaf8;
