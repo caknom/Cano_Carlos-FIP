@@ -6,7 +6,7 @@
     2. Main Nav
     3. Main Hero
     4. Beers
-    5. Feactures
+    5. Features
     6. Contact Us
     7. Footer
 */
@@ -14,10 +14,8 @@
 /* * {
     border: 1px solid #585857;
 } */
-
  
 /* 1. General styles */
-
 
 body {
     font-family: "Merriweather Sans", sans-serif;
@@ -65,7 +63,6 @@ p {
 
 /* 2. Main Nav */
 
-
 #main-nav button {
     width: 32px;
     height: 32px;
@@ -90,6 +87,13 @@ p {
     display: block;
 }
 
+#main-nav ul {
+    background-color: #406cbf;
+    list-style: none;
+    padding: 50px 0;
+    margin: 0;
+}
+
 #main-nav ul li a {
     font-size: 55px;
     font-weight: 900;
@@ -104,13 +108,12 @@ p {
     background-color: #355a9f;
     color: #edf2fb;
 }
+ 
+ #footer-nav ul li {
+     margin-bottom: 20px;
+ }
 
-#main-nav ul {
-    background-color: #406cbf;
-    list-style: none;
-    padding: 50px 0;
-    margin: 0;
-}
+
 
 #logo {
     margin-top: 10px;
@@ -118,42 +121,63 @@ p {
     margin-inline: max(25px,50% - 290px/2);
 }
 
-
 /* 3. Main Hero */
 
+.heroSection {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    margin-top: -140px;
+}
 
 #hero {
-    margin: 40px;
+    height: 900px;
 }
 
 #hero img {
-    grid-column: 1/-1;
-    grid-row: 1/1;
+    position: absolute;
+    top: 200px;
 }
 
 #hero div {
-    grid-column: 1/-1;
-    margin-top: 25px;
-}
-
-#light-hero-main {
-    margin-inline: max(15px,30% - 240px/2);
-    max-width: 240px;
-    margin-top: 10px;
-    transform: rotate(-10deg);
-}
-
-#dark-hero-main {
-    margin-inline: max(15px,70% - 240px/2);
-    max-width: 240px;
-    margin-top: 10px;
-    transform: rotate(10deg);
+    position: absolute;
+    height: 100%;
+    top: 680px;
+    justify-self: center;
 }
 
 #amber-hero-main {
     z-index: 1;
-    margin-inline: max(15px,50% - 240px/2);
+    justify-self: center;
     max-width: 240px;
+}
+
+#light-hero-main {
+    margin-inline: max(30% - 120px);
+    max-width: 240px;
+    margin-top: 16px;
+    transform: rotate(-10deg);
+}
+
+#dark-hero-main {
+    margin-inline: max(70% - 120px);
+    max-width: 240px;
+    margin-top: 16px;
+    transform: rotate(10deg);
+}
+
+#text-main {
+    position: relative;
+    top: 0;
+    overflow: visible;
+}
+
+#text-main #text-hero-main {
+    position: relative;
+    top: 0;
+    font-size: 19px;
 }
 
 #amber-main {
@@ -161,16 +185,29 @@ p {
     justify-self: center;
 }
 
-#hero div p {
+#text-main {
+    position: relative;
+    top: 0;
+    overflow: visible;
+}
+
+#text-main #text-hero-main {
+    position: relative;
+    top: 0;
     font-size: 20px;
     font-style: italic;
     font-weight: 300;
     text-align: center;
 }
 
+#text-hero-main p {
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
 #billysignature-main {
-    margin-inline: max(45px,50% - 160px/2);
-    margin-top: 6px;
+    margin-inline: max(50% - 80px);
+    margin-top: -90px;
 }
 
 #intro-summary h3 {
@@ -182,9 +219,7 @@ p {
     margin-bottom: 16px;
 }
 
-
 /* 4. Beers */
-
 
 #beers-main #beer-tittle {
     font-size: 50px;
@@ -221,9 +256,7 @@ p {
     text-align: center;
 }
 
-
-/* 5. Feactures */
-
+/* 5. Features */
 
 #feactures-main {
     margin: 100px 0;
@@ -246,9 +279,7 @@ p {
     padding-right: 15px;
 }
 
-
 /* 6. Contact Us */
-
 
 #contact-main {
     margin: 120px 0 80px;
@@ -297,9 +328,7 @@ p {
    margin-right: 6px;
 }
 
-
 /* 7. Footer */
-
 
 #footer-hero {
     background-color: #192a4a;
@@ -355,10 +384,7 @@ p {
 }
 
 
-
 /* ---Tablet Library Grid Styles--- */
-
-
 
 @media screen and (min-width: 768px) {
 
@@ -367,20 +393,18 @@ p {
         1. Main Nav
         2. Main Hero
         3. Beers
-        4. Feactures
+        4. Features
         5. Contact Us
         6. Footer
     */
 
-
     /* 1. Main Nav */
-
 
     #sticky-nav-con {
         border-bottom: solid 1px #585857;
-        max-height: 300px;
+        max-height: 310px;
     }
- 
+
     #main-nav {
         grid-row: 1/1;
         border-left: 1px solid #585857;
@@ -401,6 +425,7 @@ p {
         width: 260px;
         line-height: 40px;
         font-weight: 900;
+        padding: 0 20px;
     }
 
     #main-nav ul li a:hover {
@@ -408,29 +433,71 @@ p {
         color: #2b487f;
     }
  
+    
     #button {
         display: none;
     }
- 
+
     #burger-con {
         display: block;
         font-size: 12px;
     }
- 
+
     #logo {
         margin-top: 32px;
         min-width: 200px;
         margin-inline: auto;
         align-self: center;
     }
- 
+
+    #text-main #text-hero-main {
+        top: 110px;
+        font-size: 22px;
+    }
+
+    #billysignature-main {
+        margin-inline: max(50% - 100px);
+        margin-top: -65px;
+    }
 
     /* 2. Main Hero */
 
-
+    .heroSection {
+        margin-top: -100px;
+    }
+    
     #hero {
-        margin: 130px 0 40px 0;
-        margin-inline: 30px;
+        height: 1050px;
+    }
+    
+    #hero img {
+        position: absolute;
+        top: 200px;
+    }
+    
+    #hero div {
+        position: absolute;
+        height: 100%;
+        top: 680px;
+        justify-self: center;
+    }
+
+    #amber-main {
+        margin-top: -10px;
+        height: 40px;
+        justify-self: center;
+    }
+    
+    #light-main {
+        margin-top: 40px;
+        height: 40px;
+        margin-inline: max(25% - 165px);
+    }
+    
+    #dark-main {
+        margin-top: 40px;
+        height: 40px;
+        margin-inline: max(75% - 120px);
     }
 
     #light-hero-main {
@@ -452,24 +519,9 @@ p {
         margin-top: 100px;
     }
 
-    #amber-main {
-        height: 41px;
-        justify-self: center;
-        margin-top: -20px;
-    }
-
-    #light-main {
-        height: 41px;
-        justify-self: center;
-        margin-right: 60%;
-        margin-top: 35px;
-    }
-
-    #dark-main {
-        height: 41px;
-        justify-self: center;
-        margin-top: 35px;
-        margin-left: 58%;
+    #billysignature-main {
+        margin-inline: max(50% - 100px);
+        margin-top: 30px;
     }
 
     #intro-summary h3 {
@@ -480,7 +532,6 @@ p {
         margin-inline: 30px;
     }
 
-
     /* 3. Beers */
 
     #beers-main #beer-tittle {
@@ -490,23 +541,19 @@ p {
     #beers-main h2 {
         margin-inline: 30px;
     }
-    
 
-    /* 4. Feactures */
+    /* 4. Features */
 
-    
     #feactures-main #feactures-tittle {
         margin-inline: -5px;
     }
-    
+
     #feactures-main div {
         margin-left: 35px;
         margin-right: 35px;
-    } 
+    }
 
-    
     /* 5. Contact Us */
-
 
     #contact-main {
         margin-inline: 15px;
@@ -525,9 +572,7 @@ p {
        margin-top: 0px;
     }
 
- 
     /* 6. Footer */
-
 
     #footer-nav {
         margin-inline: 30px;
@@ -551,14 +596,9 @@ p {
         font-size: 16px;
         text-align: center;
     }
-
 }
 
-
-
 /* ---Desktop Library Grid Styles--- */
-
-
 
 @media screen and (min-width: 1200px) {
 
@@ -567,11 +607,10 @@ p {
         1. Main Nav
         2. Main Hero
         3. Beers
-        4. Feactures
+        4. Features
         5. Contact Us
         6. Footer
     */
-
 
     p {
         font-size: 18px;
@@ -586,10 +625,8 @@ p {
     h3 {
         font-size: 36px;
     }
-    
 
     /* 1. Main Nav */
-
 
     #sticky-nav-con {
         min-height: 320px;
@@ -598,75 +635,93 @@ p {
     #main-nav {
         height: 320px;
     }
- 
+
     #main-nav ul li a {
         font-size: 51px;
         line-height: 43px;
         font-weight: 900;
     }
- 
+
     #logo {
         width: 240px;
         margin: 0 auto;
     }
 
-
     /* 2. Main Hero */
 
+    .heroSection {
+        margin-top: 0px;
+    }
+    
     #hero {
-        margin: 110px 0 40px 0;
-        margin-inline: 30px;
+        height: 1100px;
+    }
+    
+    #hero img {
+        position: absolute;
+        top: 140px;
+    }
+    
+    #hero div {
+        position: absolute;
+        height: 100%;
+        top: 590px;
+        justify-self: center;
     }
 
-
     #light-hero-main {
-        margin-inline: max(15px,28% - 240px/2);
-        max-width: 280px;
-        margin-top: 120px;
+        margin-inline: max(30% - 180px);
+        max-width: 300px;
     }
 
     #dark-hero-main {
-        margin-inline: max(15px,72% - 240px/2);
-        max-width: 280px;
-        margin-top: 120px;
+        margin-inline: max(70% - 120px);
+        max-width: 300px;
     }
 
     #amber-hero-main {
-        margin-inline: max(15px,50% - 240px/2);
-        max-width: 280px;
-        margin-top: 90px;
+        max-width: 300px;
     }
 
     #amber-main {
-        height: 42px;
+        margin-top: -50px;
+        height: 54px;
+        justify-self: center;
     }
 
     #light-main {
-        height: 42px;
-        margin-right: 50%;
-        margin-top: 32px;
+        margin-top: 20px;
+        height: 54px;
+        margin-inline: max(30% - 225px);
     }
 
     #dark-main {
-        height: 42px;
-        margin-top: 32px;
-        margin-left: 52%;
+        margin-top: 20px;
+        height: 54px;
+        margin-inline: max(70% - 120px);
     }
 
-    #hero div p {
+    #text-main {
+        position: relative;
+        top: 0;
+        overflow: visible;
+    }
+
+    #text-hero-main p {
+        white-space: nowrap;
         font-size: 25px;
-        font-style: italic;
-        font-weight: 300;
-        text-align: center;
+    }
+
+    #text-main #text-hero-main {
+        top: 260px;
     }
 
     #billysignature-main {
-        margin-inline: max(45px,50% - 200px/2);
+        margin-inline: max(50% - 110px);
+        margin-top: 260px;
     }
-    
 
     /* 3. Beers */
-
 
     #beers-main {
         margin: 80px 15px;
@@ -676,7 +731,7 @@ p {
         font-size: 64px;
         margin: 80px 30px 90px;
     }
-    
+
     #beers-main section h2 {
         position: absolute;
         margin: 260px -240px;
@@ -684,11 +739,11 @@ p {
         font-size: 60px;
         transform: rotate(-90deg);
     }
-    
+
     .beers-main {
         max-width: 320px;
     }
-    
+
     #beers-main div p {
         text-align: left;
         margin-inline: 50px;
@@ -701,10 +756,8 @@ p {
     #beers-main section {
         margin-bottom: 60px;
     }
- 
 
-    /* 4. Feactures */
-
+    /* 4. Features */
 
     #feactures-main {
         display: flex;
@@ -719,15 +772,13 @@ p {
         line-height: 40px;
         margin: 0 0 20px;
     }
-    
+
     #feactures-main div {
         margin-left: 35px;
         margin-right: 35px;
-    } 
-
+    }
 
     /* 5. Contact Us */
-
 
     #contact-main {
         margin: 200px auto 120px;
@@ -737,5 +788,4 @@ p {
     #contact-main h2 {
         margin-bottom: 90px;
     }
-
 }
