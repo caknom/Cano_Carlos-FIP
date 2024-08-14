@@ -188,6 +188,12 @@ li {
     text-align: center;
 }
 
+#contact-video {
+    max-width: 401px;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
 
 /* 4. Footer */
 
@@ -266,7 +272,7 @@ li {
 
     #sticky-nav-con {
         border-bottom: solid 1px #585857;
-        max-height: 300px;
+        max-height: 310px;
     }
  
     #main-nav {
@@ -291,8 +297,6 @@ li {
         font-weight: 900;
         padding: 0 20px;
     }
-
-    
 
     #main-nav ul li a:hover {
         background-color: #fcfaf8;

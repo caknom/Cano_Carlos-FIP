@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="./css/beers.css" rel="stylesheet" type="text/css">
+    <link href="./css/grid.css" rel="stylesheet" type="text/css">
+    <title>Billy Beer</title>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <div id="sticky-nav-con">
+        <header class="grid-con" id="main-header">
+            <nav id="main-nav" class="col-span-full m-col-start-5 m-col-end-13 l-col-start-4 l-col-end-13">
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="beer.html">BEERS</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">COMPANY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="logo" class="col-span-full m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-4">
+                <img src="images/logo-billybeer.svg" alt="Billy Beer Logo">
+            </div>
+        </header>
+    </div>
+
+    <!-- Main Content -->
+
+    <section id="beers" class="grid-con">
+
+        <h2 class="col-span-full">Raise Your Glass</h2>
+        <h3 class="col-span-full">The New Era of Billy Beer</h3>
+        <div class="beers-video col-span-full">
+            <video controls preload="auto" src="videos/company_video.webm"></video>
+        </div>
+        
+    </section>
+
+    <div id="beers-main">
+        <div class="grid-con">
+
+            <h2 id="beer-title" class="col-span-full">Our Beers</h2>
+           
+            <section class="beer-section col-span-full m-col-span-full l-col-start-2 l-col-end-6">
+                <h2>Amber Lager</h2>
+                <img
+                    sizes="100vw"
+                    srcset="
+                    images/img-can-amber_pv9fzm_c_scale,w_200.png 200w,
+                    images/img-can-amber_pv9fzm_c_scale,w_308.png 308w,
+                    images/img-can-amber_pv9fzm_c_scale,w_393.png 393w,
+                    images/img-can-amber_pv9fzm_c_scale,w_471.png 471w,
+                    images/img-can-amber_pv9fzm_c_scale,w_532.png 532w,
+                    images/img-can-amber_pv9fzm_c_scale,w_595.png 595w,
+                    images/img-can-amber_pv9fzm_c_scale,w_655.png 655w"
+                    src="images/img-can-amber_pv9fzm_c_scale,w_655.png"
+                    alt="Billy Beer Amber Lager Can"
+                    class="beers-main"
+                >
+            </section>
+
+            <div class="col-span-full m-col-span-full l-col-start-7 l-col-end-13">
+                <p>Billy's Amber Lager is a celebration of rich, caramel flavors balanced by a smooth hop finish. This medium-bodied lager has a deep amber color that promises a malt-forward taste and a clean finish. Crafted with a blend of specialty malts, it offers a toasted complexity that is both approachable and satisfying. Perfect for those who appreciate a beer with depth but without the heaviness of a darker brew.</p>
+                <ul id="tasting-notes-amber">
+                    <li>Aroma: Caramel and toasted bread with hints of floral hops.</li>
+                    <li>Flavor: Malty sweetness with notes of caramel and a light, balancing bitterness.</li>
+                    <li>Finish: Smooth with a moderately dry finish that invites another sip.</li>
+                </ul>
+                <p>Excellent with grilled meats, hearty stews, or a classic burger. Its robust flavor also pairs well with rich cheeses and spicy dishes.</p>
+                <button class="offer-button" onclick="showPromo('Amber')">TODAY'S OFFER!</button>
+            </div>
+
+
+            <section class="beer-section col-span-full m-col-span-full l-col-start-2 l-col-end-6">
+                <h2>Light Lager</h2>
+                <img
+                    sizes="100vw"
+                    srcset="
+                    images/img-can-light_rsdnq3_c_scale,w_190.png 190w,
+                    images/img-can-light_rsdnq3_c_scale,w_289.png 289w,
+                    images/img-can-light_rsdnq3_c_scale,w_369.png 369w,
+                    images/img-can-light_rsdnq3_c_scale,w_437.png 437w,
+                    images/img-can-light_rsdnq3_c_scale,w_503.png 503w,
+                    images/img-can-light_rsdnq3_c_scale,w_559.png 559w,
+                    images/img-can-light_rsdnq3_c_scale,w_615.png 615w,
+                    images/img-can-light_rsdnq3_c_scale,w_655.png 655w"
+                    src="images/img-can-light_rsdnq3_c_scale,w_655.png"
+                    alt="Billy Beer Light Lager Can"
+                    class="beers-main"
+                >
+            </section>
+
+            <div class="col-span-full m-col-span-full l-col-start-7 l-col-end-13">
+                <p>Billy's Light Lager is crafted for refreshment and drinkability. This crisp and clean lager is made with the finest ingredients, resulting in a light golden brew with a delicate balance of malt and hops. Its subtle flavors and low bitterness make it an excellent choice for those seeking a lighter beer option that doesn't compromise on taste.</p>
+                <ul id="tasting-notes-light">
+                    <li>Aroma: Light hints of citrus and grains.</li>
+                    <li>Flavor: Crisp and refreshing with a subtle malt sweetness and minimal hop presence.</li>
+                    <li>Finish: Clean and quick, making it highly sessionable.</li>
+                </ul>
+                <p>Perfect with light fare such as salads, chicken dishes, or fresh seafood. It’s also a great companion to spicy foods as it helps cleanse the palate.</p>
+                <div class="div-offer-button">
+                    <button class="offer-button" onclick="showPromo('Light')">TODAY'S OFFER!</button>
+                </div>
+            </div>
+
+
+            <section class="beer-section col-span-full m-col-span-full l-col-start-2 l-col-end-6">
+                <h2>Dark Lager</h2>
+                <img
+                    sizes="100vw"
+                    srcset="
+                    images/img-can-dark_imvdo5_c_scale,w_190.png 190w,
+                    images/img-can-dark_imvdo5_c_scale,w_289.png 289w,
+                    images/img-can-dark_imvdo5_c_scale,w_371.png 371w,
+                    images/img-can-dark_imvdo5_c_scale,w_435.png 435w,
+                    images/img-can-dark_imvdo5_c_scale,w_501.png 501w,
+                    images/img-can-dark_imvdo5_c_scale,w_557.png 557w,
+                    images/img-can-dark_imvdo5_c_scale,w_607.png 607w,
+                    images/img-can-dark_imvdo5_c_scale,w_655.png 655w"
+                    src="images/img-can-dark_imvdo5_c_scale,w_655.png"
+                    alt="Billy Beer Dark Lager Can"
+                    class="beers-main"
+                >
+            </section>
+
+            <div class="col-span-full m-col-span-full l-col-start-7 l-col-end-13">
+                <p>Billy's Dark Lager offers a rich and complex flavor profile with a surprisingly smooth finish. This full-bodied lager is brewed with a variety of dark roasted malts, imparting a deep ebony color and flavors of chocolate and coffee. Despite its robust appearance, it remains smooth and easy to drink, with just the right amount of hop bitterness to balance the malt sweetness.</p>
+                <ul id="tasting-notes-dark">
+                    <li>Aroma: Rich chocolate and coffee, with a touch of toffee.</li>
+                    <li>Flavor: Dark malt sweetness with layers of chocolate and a hint of roasted coffee.</li>
+                    <li>Finish: Smooth with a balanced bitterness that complements the malt profile.</li>
+                </ul>
+                <p>Ideal with smoked or barbecued foods, rich desserts like chocolate cake, or as a complement to a robust cheese platter.</p>
+                <button class="offer-button" onclick="showPromo('Dark')">TODAY'S OFFER!</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Lightbox for Promotions -->
+
+    <div id="promoLightbox" class="lightbox">
+        <div id="promoContent" class="lightbox-content">
+            <span class="close">X</span>
+            <h2 id="promoTitle"></h2>
+            <p id="promoText"></p>
+        </div>
+    </div>
+
+        <!-- Footer -->
+    
+        <footer id="footer-hero">
+            <div class="grid-con">
+                <nav id="footer-nav" class="col-span-3 m-col-start-1 m-col-end-9">
+                    <h2 class="hidden">Footer Nav</h2>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="beers.html">BEERS</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">COMPANY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div id="footer-logo" class="col-span-1 m-col-start-10 m-col-end-13">
+                    <img src="images/logo-billybeer.svg" alt="Billy Beer 1977 Logo">
+                </div>
+                <div id="footer-privacy" class="line-separator col-span-full m-col-start-2 m-col-end-12">
+                    <p id="privacy-policy">©2024 Billy Beer. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+
+    <script src="./js/beers.js"></script>
+</body>
+</html>

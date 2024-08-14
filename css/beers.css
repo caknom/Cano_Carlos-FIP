@@ -1,0 +1,493 @@
+/* Billy Beer Responsive Build */
+
+/* 
+    CSS Guide
+    1. General styles
+    2. Main Nav
+    3. Main Content
+    4. Lightboxes
+    5. Footer
+*/
+
+/* * {
+    border: 1px solid #585857;
+} */
+ 
+/* 1. General styles */
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    background-color: #fcfaf8;
+    color: #585857;
+}
+
+a {
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #dc573d;
+    text-transform: uppercase;
+    line-height: 55px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #dc573d;
+    text-transform: uppercase;
+    line-height: 36px;
+    text-align: center;
+}
+
+h3 span {
+    font-weight: 500;
+}
+
+p, ul {
+    line-height: 26px;
+    font-weight: 400;
+}
+
+/* 2. Main Nav */
+
+#main-nav button {
+    width: 32px;
+    height: 32px;
+    background: url(../images/icon-burger.svg) no-repeat center;
+    margin-top: 16px;
+    transition: all .3s ease;
+    margin-bottom: 20px;
+    border: 0;
+}
+
+#main-nav button.expanded {
+    transform: rotate(90deg);
+}
+
+#burger-con {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#burger-con.slide-toggle {
+    display: block;
+}
+
+#main-nav ul {
+    background-color: #406cbf;
+    list-style: none;
+    padding: 50px 0;
+    margin: 0;
+}
+
+#main-nav ul li a {
+    font-size: 55px;
+    font-weight: 900;
+    background-color: #406cbf;
+    display: block;
+    padding: 0 20px;
+    text-align: left;
+    color: #edf2fb;
+}
+
+#main-nav ul li a:hover {
+    background-color: #355a9f;
+    color: #edf2fb;
+}
+ 
+ #footer-nav ul li {
+     margin-bottom: 20px;
+ }
+
+#logo {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-inline: max(25px,50% - 290px/2);
+}
+
+/* 3. Main Content */
+
+#beers {
+    margin-top: 80px;
+}
+
+.beers-video {
+    justify-self: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#beer-title {
+    margin: 100px 0 20px;
+}
+
+#beers-main section h2 {
+    margin-top: 55px;
+    font-size: 40px;
+    color: #585857;
+    text-align: center;
+}
+
+.beers-main:hover {
+    transform: rotate(5deg) scale(1.03);
+}
+
+.beers-main {
+    margin-inline: max(15px,50% - 240px/2);
+    max-width: 240px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.beer-section ul {
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+#beers div p {
+    margin-inline: 50px;
+    text-align: center;
+}
+
+#tasting-notes-amber {
+    background-color: #DC573D;
+    color: #FCFAF8;
+    margin: 36px max(15px,50% - 320px);
+    padding: 22px 60px;
+}
+
+#tasting-notes-light {
+    background-color: #4778D4;
+    color: #FCFAF8;
+    margin: 36px max(15px,50% - 320px);
+    padding: 22px 60px;
+}
+
+#tasting-notes-dark {
+    background-color: #9E2B24;
+    color: #FCFAF8;
+    margin: 36px max(15px,50% - 320px);
+    padding: 22px 60px;
+}
+
+#beers .div-offer-button {
+    margin-inline: auto;
+}
+
+.offer-button {
+    background-color: #9E2B24;
+    color: #FCFAF8;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px 70px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin: 36px max(5px,50% - 360px/2) 50px;
+}
+
+.offer-button:hover {
+    background-color: #DC573D;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* 4. Lightbox Styles */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+
+}
+
+.lightbox-content {
+    background-color: #FCFAF8;
+    padding: 50px 20px;
+    border: none;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    justify-content: center;
+    margin: max(50vh - 270px/2) max(50vw - 700px/2);
+    align-items: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 5. Footer */
+
+#footer-hero {
+    background-color: #192a4a;
+    color: #edf2fb;
+    font-size: 12px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+#footer-nav {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#footer-nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+#footer-nav ul li a {
+    font-size: 60px;
+    color: #edf2fb;
+    line-height: 30px;
+    font-weight: 900;
+    text-align: right;
+}
+
+#footer-nav ul li a:hover {
+    color: #4778d4;
+}
+
+#footer-nav ul li {
+    margin-bottom: 20px;
+}
+
+#footer-logo {
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-left: -80px;
+    max-width: 160px;
+}
+
+#footer-hero .line-separator {
+    border-top: solid 1px #edf2fb;
+}
+
+#footer-privacy p {
+    margin-top: 40px;
+    line-height: 18px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* ---Tablet Library Grid Styles--- */
+
+@media screen and (min-width: 768px) {
+
+    /* 
+        CSS Guide
+        1. Main Nav
+        2. Footer
+    */
+
+    /* 1. Main Nav */
+
+    #sticky-nav-con {
+        border-bottom: solid 1px #585857;
+        max-height: 310px;
+    }
+
+    #main-nav {
+        grid-row: 1/1;
+        border-left: 1px solid #585857;
+        height: 300px;
+    }
+
+    #main-nav ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #fcfaf8;
+        margin: 0 50px;
+    }
+ 
+    #main-nav ul li a {
+        background-color: #fcfaf8;
+        color: #4778d4;
+        font-size: 45px;
+        width: 260px;
+        line-height: 40px;
+        font-weight: 900;
+        padding: 0 20px;
+    }
+
+    #main-nav ul li a:hover {
+        background-color: #fcfaf8;
+        color: #2b487f;
+    }
+ 
+    
+    #button {
+        display: none;
+    }
+
+    #burger-con {
+        display: block;
+        font-size: 12px;
+    }
+
+    #logo {
+        margin-top: 32px;
+        min-width: 200px;
+        margin-inline: auto;
+        align-self: center;
+    }
+
+    #text-main #text-hero-main {
+        top: 110px;
+        font-size: 22px;
+    }
+
+    #billysignature-main {
+        margin-inline: max(50% - 100px);
+        margin-top: -65px;
+    }
+
+    /* 2. Footer */
+
+    #footer-nav {
+        margin-inline: 30px;
+    }
+
+    #footer-logo {
+        margin-top: 60px;
+        margin-right: 60px;
+        min-width: 260px;
+        justify-self: right;
+    }
+
+    #footer-hero .line-separator {
+        grid-column: 1/-1;
+        margin: 0 30px;
+    }
+
+    #footer-privacy p {
+        margin-top: 40px;
+        line-height: 18px;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* ---Desktop Library Grid Styles--- */
+
+@media screen and (min-width: 1200px) {
+
+    /* 
+        CSS Guide
+        1. Main Nav
+        2. Beers
+    */
+
+    p {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+    
+    h3 {
+        font-size: 36px;
+    }
+
+    /* 1. Main Nav */
+
+    #sticky-nav-con {
+        min-height: 320px;
+    }
+
+    #main-nav {
+        height: 320px;
+    }
+
+    #main-nav ul li a {
+        font-size: 51px;
+        line-height: 43px;
+        font-weight: 900;
+    }
+
+    #logo {
+        width: 240px;
+        margin: 0 auto;
+    }
+
+    /* 2. Beers */
+
+    #beers-main {
+        margin: 80px 15px;
+    }
+
+    #beers-main #beer-tittle {
+        font-size: 64px;
+        margin: 80px 30px 90px;
+    }
+
+    #beers-main section h2 {
+        position: absolute;
+        margin: 260px -240px;
+        width: 500px;
+        font-size: 60px;
+        transform: rotate(-90deg);
+    }
+
+    .beers-main {
+        max-width: 320px;
+    }
+
+    #beers-main div p {
+        text-align: left;
+        margin-inline: 50px;
+    }
+
+    #beers-main div {
+        align-items: center;
+    }
+
+    #beers-main section {
+        margin-bottom: 60px;
+    }
+
+    
+}
