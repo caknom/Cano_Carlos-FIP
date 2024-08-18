@@ -189,6 +189,7 @@ li {
 }
 
 #contact-video {
+    display: none;
     max-width: 401px;
     justify-self: center;
     margin-bottom: 20px;
@@ -353,6 +354,28 @@ li {
     #contact-hero-form textarea {
         height: 390px;
     }
+
+    #contact-video {
+        display: block;
+        max-width: 401px;
+        justify-self: center;
+        margin-bottom: 20px;
+    }
+
+    .hover-message {
+        display: none; /* Hidden by default */
+        background-color: #dc573d;
+        color: #fcfaf8;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
+    .hover-message.show {
+        display: block; /* Show the message when triggered */
+    }    
 
  
     /* 3. Footer */

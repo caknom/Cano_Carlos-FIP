@@ -41,7 +41,7 @@
         <h2 class="col-span-full">Raise Your Glass</h2>
         <h3 class="col-span-full">The New Era of Billy Beer</h3>
         <div class="beers-video col-span-full">
-            <video controls preload="auto" src="videos/beers_video.mp4"></video>
+            <video controls preload="auto" src="videos/beers_video.webm"></video>
         </div>
         
     </section>
@@ -69,14 +69,8 @@
                 >
             </section>
 
-            <div class="col-span-full m-col-span-full l-col-start-7 l-col-end-13">
-                <p>Billy's Amber Lager is a celebration of rich, caramel flavors balanced by a smooth hop finish. This medium-bodied lager has a deep amber color that promises a malt-forward taste and a clean finish. Crafted with a blend of specialty malts, it offers a toasted complexity that is both approachable and satisfying. Perfect for those who appreciate a beer with depth but without the heaviness of a darker brew.</p>
-                <ul id="tasting-notes-amber">
-                    <li>Aroma: Caramel and toasted bread with hints of floral hops.</li>
-                    <li>Flavor: Malty sweetness with notes of caramel and a light, balancing bitterness.</li>
-                    <li>Finish: Smooth with a moderately dry finish that invites another sip.</li>
-                </ul>
-                <p>Excellent with grilled meats, hearty stews, or a classic burger. Its robust flavor also pairs well with rich cheeses and spicy dishes.</p>
+            <div class="beers-description col-span-full m-col-span-full l-col-start-7 l-col-end-13">
+                <p><span>Is a celebration of rich</span><br> Caramel flavors balanced by a smooth hop finish. This medium-bodied lager has a deep amber color that promises a malt-forward taste and a clean finish. Crafted with a blend of specialty malts, it offers a toasted complexity that is both approachable and satisfying. Perfect for those who appreciate a beer with depth but without the heaviness of a darker brew.</p>
                 <button class="offer-button" onclick="showPromo('Amber')">TODAY'S OFFER!</button>
             </div>
 
@@ -100,14 +94,8 @@
                 >
             </section>
 
-            <div class="col-span-full m-col-span-full l-col-start-7 l-col-end-13">
-                <p>Billy's Light Lager is crafted for refreshment and drinkability. This crisp and clean lager is made with the finest ingredients, resulting in a light golden brew with a delicate balance of malt and hops. Its subtle flavors and low bitterness make it an excellent choice for those seeking a lighter beer option that doesn't compromise on taste.</p>
-                <ul id="tasting-notes-light">
-                    <li>Aroma: Light hints of citrus and grains.</li>
-                    <li>Flavor: Crisp and refreshing with a subtle malt sweetness and minimal hop presence.</li>
-                    <li>Finish: Clean and quick, making it highly sessionable.</li>
-                </ul>
-                <p>Perfect with light fare such as salads, chicken dishes, or fresh seafood. It’s also a great companion to spicy foods as it helps cleanse the palate.</p>
+            <div class="beers-description col-span-full m-col-span-full l-col-start-7 l-col-end-13">
+                <p><span>Refreshment and drinkability</span><br> This crisp and clean lager is made with the finest ingredients, resulting in a light golden brew with a delicate balance of malt and hops. Its subtle flavors and low bitterness make it an excellent choice for those seeking a lighter beer option that doesn't compromise on taste.</p>
                 <div class="div-offer-button">
                     <button class="offer-button" onclick="showPromo('Light')">TODAY'S OFFER!</button>
                 </div>
@@ -133,19 +121,29 @@
                 >
             </section>
 
-            <div class="col-span-full m-col-span-full l-col-start-7 l-col-end-13">
-                <p>Billy's Dark Lager offers a rich and complex flavor profile with a surprisingly smooth finish. This full-bodied lager is brewed with a variety of dark roasted malts, imparting a deep ebony color and flavors of chocolate and coffee. Despite its robust appearance, it remains smooth and easy to drink, with just the right amount of hop bitterness to balance the malt sweetness.</p>
-                <ul id="tasting-notes-dark">
-                    <li>Aroma: Rich chocolate and coffee, with a touch of toffee.</li>
-                    <li>Flavor: Dark malt sweetness with layers of chocolate and a hint of roasted coffee.</li>
-                    <li>Finish: Smooth with a balanced bitterness that complements the malt profile.</li>
-                </ul>
-                <p>Ideal with smoked or barbecued foods, rich desserts like chocolate cake, or as a complement to a robust cheese platter.</p>
+            <div class="beers-description col-span-full m-col-span-full l-col-start-7 l-col-end-13">
+                <p><span>Rich and Complex</span><br> Offers a complex flavor profile with a surprisingly smooth finish. This full-bodied lager is brewed with a variety of dark roasted malts, imparting a deep ebony color and flavors of chocolate and coffee. Despite its robust appearance, it remains smooth and easy to drink, with just the right amount of hop bitterness to balance the malt sweetness.</p>
                 <button class="offer-button" onclick="showPromo('Dark')">TODAY'S OFFER!</button>
             </div>
 
         </div>
     </div>
+
+    <!-- Contact -->
+    <section id="contact-main" class="grid-con">
+        <h2 class="col-span-full">Contact US</h2>
+        <div id="contact-hero-text" class="col-span-full m-col-start-1 m-col-end-6">
+            <p>We are here to answer any questions you might have about Billy Beer!<br> Whether you are a curious customer, a brewing enthusiast, or a potential partner, we would love to hear from you.</p>
+        </div>
+        <div id="contact-hero-form" class="col-span-full m-col-start-6 m-col-end-13">
+            <form action="#" method="post" enctype="text/plain">
+                <input name="fullName" type="text" required placeholder="First & Last Name">
+                <input name="contactInfo" type="email" required placeholder="Email">
+                <textarea name="msg" placeholder="Message here..."></textarea>
+                <input name="submit" type="submit" value="Cheers!">
+            </form>
+        </div>
+    </section>
 
     <!-- Lightbox for Promotions -->
 
@@ -159,26 +157,26 @@
 
         <!-- Footer -->
     
-        <footer id="footer-hero">
-            <div class="grid-con">
-                <nav id="footer-nav" class="col-span-3 m-col-start-1 m-col-end-9">
-                    <h2 class="hidden">Footer Nav</h2>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="beers.html">BEERS</a></li>
-                        <li><a href="#">SHOP</a></li>
-                        <li><a href="#">COMPANY</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </nav>
-                <div id="footer-logo" class="col-span-1 m-col-start-10 m-col-end-13">
-                    <img src="images/logo-billybeer.svg" alt="Billy Beer 1977 Logo">
-                </div>
-                <div id="footer-privacy" class="line-separator col-span-full m-col-start-2 m-col-end-12">
-                    <p id="privacy-policy">©2024 Billy Beer. All Rights Reserved</p>
-                </div>
+    <footer id="footer-hero">
+        <div class="grid-con">
+            <nav id="footer-nav" class="col-span-3 m-col-start-1 m-col-end-9">
+                <h2 class="hidden">Footer Nav</h2>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="beers.html">BEERS</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">COMPANY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div id="footer-logo" class="col-span-1 m-col-start-10 m-col-end-13">
+                <img src="images/logo-billybeer.svg" alt="Billy Beer 1977 Logo">
             </div>
-        </footer>
+            <div id="footer-privacy" class="line-separator col-span-full m-col-start-2 m-col-end-12">
+                <p id="privacy-policy">©2024 Billy Beer. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/beers.js"></script>
 </body>
