@@ -20,6 +20,7 @@ var promoText = document.getElementById("promoText");
 
 
 function showPromo(beerType) {
+    if (!beerType) return; // Exit the function if no beerType is provided
 
     promoLightbox.style.display = "block";
 
@@ -28,13 +29,12 @@ function showPromo(beerType) {
         promoText.innerHTML = "On your first order of Amber Lager <br> using promo code: AMBER15!";
     } else if (beerType === 'Light') {
         promoTitle.innerHTML = "BUY ONE <br> GET ONE FREE!";
-        promoText.innerHTML = "Light Lager <br> the perfect choise for those hot summer days!";
+        promoText.innerHTML = "Light Lager <br> the perfect choice for those hot summer days!";
     } else if (beerType === 'Dark') {
         promoTitle.innerHTML = "20% OFF!";
         promoText.innerHTML = "When you buy two six-packs of Dark Lager <br> Dive into the bold flavor!";
     } 
 }
-
 window.addEventListener('click', function(event) {
     const close = document.querySelector('.close');
     if (event.target === close || event.target === promoLightbox) {

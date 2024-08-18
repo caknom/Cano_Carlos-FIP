@@ -256,6 +256,33 @@ p {
     text-align: center;
 }
 
+#tasting-notes-amber {
+    background-color: #DC573D;
+    color: #FCFAF8;
+    margin: 36px max(15px,50% - 320px);
+    padding: 22px 60px;
+}
+
+#tasting-notes-light {
+    background-color: #4778D4;
+    color: #FCFAF8;
+    margin: 36px max(15px,50% - 320px);
+    padding: 22px 60px;
+}
+
+#tasting-notes-dark {
+    background-color: #9E2B24;
+    color: #FCFAF8;
+    margin: 36px max(15px,50% - 320px);
+    padding: 22px 60px;
+}
+
+#beers-main p span {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
 /* 5. Features */
 
 #feactures-main {
@@ -755,6 +782,21 @@ p {
 
     #beers-main section {
         margin-bottom: 60px;
+    }
+
+    #tasting-notes-amber {
+        margin-left: 50px;
+        line-height: 1.6;
+    }
+    
+    #tasting-notes-light {
+        margin-left: 50px;
+        line-height: 1.6;
+    }
+    
+    #tasting-notes-dark {
+        margin-left: 50px;        
+        line-height: 1.6;
     }
 
     /* 4. Features */

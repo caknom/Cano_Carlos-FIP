@@ -6,7 +6,8 @@
     2. Main Nav
     3. Main Content
     4. Lightboxes
-    5. Footer
+    5. Contact Us
+    6. Footer
 */
 
 /* * {
@@ -142,6 +143,15 @@ p, ul {
     text-align: center;
 }
 
+#beers-main p span {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.beer-section {
+    margin-top: 50px;
+}
+
 .beers-main:hover {
     transform: rotate(5deg) scale(1.03);
 }
@@ -150,21 +160,6 @@ p, ul {
     margin-inline: max(15px,50% - 240px/2);
     max-width: 240px;
     margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.beer-section ul {
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-}
-
-#beers div p {
-    margin-inline: 50px;
-    text-align: center;
 }
 
 #tasting-notes-amber {
@@ -186,6 +181,10 @@ p, ul {
     color: #FCFAF8;
     margin: 36px max(15px,50% - 320px);
     padding: 22px 60px;
+}
+
+#beers-main .beers-description {
+    margin: 60px 30px;
 }
 
 #beers .div-offer-button {
@@ -213,6 +212,10 @@ p, ul {
 }
 
 /* 4. Lightbox Styles */
+
+#promoLightbox {
+    display: none;
+}
 
 .lightbox {
     display: none;
@@ -254,7 +257,56 @@ p, ul {
     cursor: pointer;
 }
 
-/* 5. Footer */
+/* 5. Contact Us */
+
+#contact-main {
+    margin: 120px 0 80px;
+}
+
+#contact-main h2 {
+    margin: 0 0px 65px;
+}
+
+#contact-hero-form form {
+   display: flex;
+   flex-direction: column;
+   margin-top: 40px;
+}
+
+#contact-hero-form input, textarea {
+   padding: 22px;
+   border: 2px solid #bdbcba;
+   background-color: #fefdfd;
+   border-radius: 5px;
+   margin-bottom: 30px;
+   font: inherit;
+   width: 100%;
+}
+
+#contact-hero-form textarea {
+   height: 250px;
+}
+
+#contact-hero-form input[type="submit"] {
+   padding: 16px 28px;
+   background: #dc573d;
+   font-size: 18px;
+   color: #fcfaf8;
+   border: none;
+   transition: all 200ms ease-in;
+   width: 220px;
+   align-self: flex-end;
+   font-style: italic;
+}
+
+#contact-hero-form input[type="submit"]:hover {
+   background-color: #c64e37;
+   color: #fae6e2;
+   transform: scale(1.05);
+   margin-right: 6px;
+}
+
+/* 6. Footer */
 
 #footer-hero {
     background-color: #192a4a;
@@ -317,7 +369,8 @@ p, ul {
     /* 
         CSS Guide
         1. Main Nav
-        2. Footer
+        2. Contact Us
+        3. Footer
     */
 
     /* 1. Main Nav */
@@ -372,6 +425,10 @@ p, ul {
         align-self: center;
     }
 
+    #beers-main .beers-description {
+        margin: 60px 100px;
+    }
+
     #text-main #text-hero-main {
         top: 110px;
         font-size: 22px;
@@ -382,7 +439,25 @@ p, ul {
         margin-top: -65px;
     }
 
-    /* 2. Footer */
+    /* 2. Contact Us */
+    #contact-main {
+        margin-inline: 15px;
+    }
+
+    #contact-main h2 {
+        margin-inline: 15px;
+    }
+
+    #contact-main p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #contact-hero-form form {
+       margin-top: 0px;
+    }
+
+    /* 3. Footer */
 
     #footer-nav {
         margin-inline: 30px;
@@ -416,6 +491,7 @@ p, ul {
         CSS Guide
         1. Main Nav
         2. Beers
+        3. Contact Us
     */
 
     p {
@@ -489,5 +565,20 @@ p, ul {
         margin-bottom: 60px;
     }
 
+    #beers-main .beers-description {
+        margin: 0 -50px;
+    }
+
+
+    /* 3. Contact Us */
+
+    #contact-main {
+        margin: 200px auto 120px;
+        padding-inline: 30px;
+    }
+
+    #contact-main h2 {
+        margin-bottom: 90px;
+    }
     
 }
